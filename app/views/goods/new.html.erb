@@ -1,0 +1,19 @@
+<%= form_tag "/goods", method: :post do %>
+
+
+<div>
+   <%= label_tag :title %>
+   <%= text_field_tag :title %>
+  </div> 
+
+<div>
+   <%= label_tag :price %>
+   <%= text_field_tag :price %>
+  </div> 
+
+
+<div>
+    <%= submit_tag "Press Enter" %>
+  </div>
+
+  <% end %>
