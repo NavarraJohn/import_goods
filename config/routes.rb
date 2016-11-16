@@ -17,9 +17,10 @@ Rails.application.routes.draw do
 
   get "/goods/:id", to: "goods#show"
 
+  delete "/goods/:id", to: "goods#destroy" 
 
 
-  
+
   #http://localhost:3000/goods/2
 
 end

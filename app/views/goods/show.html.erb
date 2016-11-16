@@ -1,5 +1,17 @@
-  <h2><%= image_tag @goods.img %></h2>
-  <h3><%= @goods.title %></h3>
-  <h4><%= @goods.price %></h4>
+  
+  <h3><%= @good.title %></h3>
+  <h4><%= @good.price %></h4>
+
+  
+  <div>
+    <%= link_to "Edit Good", "/goods/#{@good.id}/edit", method: :delete %>
+  </div>
+
+
+
+
+  <div>
+    <%= link_to "Delete Good", "/goods/#{@good.id}", method: :delete %>
+  </div>
 
 

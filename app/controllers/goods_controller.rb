@@ -32,6 +32,10 @@ class GoodsController < ApplicationController
     @good = Good.find_by(id: params[:id])
   end
   
+  def destroy
+    @good = Good.find_by(id: params[:id])
+    @good.destroy
+  end 
 
   def update
     good = Good.find_by(id: params[:id])
